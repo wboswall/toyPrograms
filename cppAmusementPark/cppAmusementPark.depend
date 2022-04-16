@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1522437170 source:/home/william/Documents/HelloWorld/cppAmusementPark/main.cpp
+	<iostream>
+	<stdlib.h>
+
