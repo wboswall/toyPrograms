@@ -3,14 +3,14 @@
  *Purpose: Point of sales that replaces order tickets and displays the orders in a text file
    so they can be displayed in the kitchen.
  *Date Created: 04/04/22
- *Date Modified: 04/15/22, 04/05/22 
+ *Date Modified: 04/05/22, 04/15/22, 04/16/22
  *Location Programmed: PEI, Canada
- *Version: 1.0.0.0
+ *Version: 0.0.0.0, 1.0.0.0
  *Compatible Operating Systems: Windows and Linux
  *Programming Language used: C Language
- *Date Released: 04/05/22
+ *Date Released: 04/16/22
  *Programmed by: William EB Boswall
- *Licensed under the MIT License.  
+ *Licensed under MIT License.  
  *People who have contributed to make this software better: 
  *This header must stay intact where ever this repository goes to.  
  */
@@ -29,12 +29,11 @@
    *Declarations
    */
    char mealChoice[100];
-   double total = 0;
-   double subTotal = 0;
-   double mealCost = 0;
-   const double HST = .15;
-   const double ECO_DEPOSIT = .10;
-   //double mealCost = 0;
+   float total = 0.0;
+   float subTotal = 0.0;
+   float mealCost = 0.0;
+   const float HST = 0.15;
+   const float ECO_DEPOSIT = 0.10;
    
    //void calcTotal();
    //void displayMenu(void);
@@ -52,11 +51,11 @@
 	   printf("Enter the customer's choice of Meal \n\n");
 	   gets(mealChoice);
 	   printf("Enter the cost of meal: \n");
-	   scanf("%d", &mealCost);
+	   scanf("%g", &mealCost);
 	   subTotal = mealCost + (mealCost * HST);
 	   total = subTotal + ECO_DEPOSIT;
 	   printf("\nYour order:  %s", mealChoice, "\n");
-	   printf("\nTotal cost:  %d", total, "\n");
+	   printf("\nTotal cost:  $ %g", total, "\n");
    	   printf("\nThank you for your support!\n");
 	   printf("Come again! \n");
 	   
