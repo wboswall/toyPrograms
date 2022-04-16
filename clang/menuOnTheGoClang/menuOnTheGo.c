@@ -1,6 +1,6 @@
 /*
  *Program Name: Menu On The Go
- *Purpose: Point of sales that replaces order tickets and displays the orders in a text file
+ *Purpose: Point of sales that replaces order tickets.
    so they can be displayed in the kitchen.
  *Date Created: 04/04/22
  *Date Modified: 04/05/22, 04/15/22, 04/16/22
